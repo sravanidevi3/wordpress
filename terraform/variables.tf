@@ -11,7 +11,7 @@ variable "dockerfile_dir" {
 variable "ecr_repository_url" {
   type        = string
   description = "Full url for the ECR repository"
-  default = "765771042989.dkr.ecr.ap-south-1.amazonaws.com/clever-tap"
+  default = "900024488048.dkr.ecr.ap-south-1.amazonaws.com/clevertap"
 }
 
 variable "health_check" {
