@@ -4,7 +4,7 @@ resource "aws_ecs_task_definition" "wordpress" {
   requires_compatibilities = ["FARGATE"]
   memory                   = "4096"
   cpu                      = "2048"
-  execution_role_arn       = "arn:aws:iam::765771042989:role/ecsTaskExecutionRole"
+  execution_role_arn       = "arn:aws:iam::900024488048:role/ecsecrTaskExecutionRole"
   container_definitions    = jsonencode([
     {
       name = "wordpress"
