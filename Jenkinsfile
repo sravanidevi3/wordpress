@@ -14,7 +14,7 @@ pipeline {
                 sh 'docker system prune -af'
                 sh 'docker -v'
                 script{
-                docker.withRegistry("https://"+registry, "ecr:ap-south-1:Wordpress") {
+                docker.withRegistry("https://"+registry, "ecr:ap-south-1:wordpress") {
                     def customImage = docker.build(registry+"/clevertap:wordpress_${BUILD_NUMBER}")            
                      customImage.push()
                 }
