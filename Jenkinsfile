@@ -15,7 +15,7 @@ pipeline {
                 sh 'docker -v'
                 script{
                 docker.withRegistry("https://"+registry, "ecr:ap-south-1:Wordpress") {
-                    def customImage = docker.build(registry+"/clever-tap:wordpress_${BUILD_NUMBER}")            
+                    def customImage = docker.build(registry+"/clevertap:wordpress_${BUILD_NUMBER}")            
                      customImage.push()
                 }
                 }
